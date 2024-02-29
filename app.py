@@ -4,7 +4,7 @@ import json
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app, origins='http://localhost:3000', supports_credentials=True) 
+CORS(app, origins='*', supports_credentials=True) 
 openai_key = OpenAI(
     api_key='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'
 )
