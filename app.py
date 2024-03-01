@@ -72,10 +72,7 @@ def generate_response():
         response_content_suggested = [line.strip() for line in response_text_content.split('\n') if line]
         formatted_suggestions_list = [suggestion.split('. ', 1)[-1].strip() if '. ' in suggestion else suggestion.strip() for suggestion in response_content_suggested]
         suggested_prompt.append(formatted_suggestions_list)
-        print(suggested_prompt)
-        # print(parsed_data_suggested)
-        
-        print(response_content)
+       
         
 
         return jsonify({
