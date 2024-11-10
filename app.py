@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template,jsonify
+ from flask import Flask, request, render_template,jsonify
 from openai import OpenAI
 import json
 from flask_cors import CORS
@@ -6,7 +6,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app, origins='*', supports_credentials=True) 
 openai_key = OpenAI(
-    api_key='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'
+    api_key=''
 )
 
 # @app.route('/')
